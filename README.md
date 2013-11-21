@@ -6,7 +6,7 @@ Running Locally
 
 ```sh
 bundle
-ruby app.rb
+ruby main.rb
 ```
 
 Deploying on Appsdeck
