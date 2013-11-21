@@ -1,6 +1,5 @@
 require 'sinatra'
 
 get '/' do 
-  logger.info "coucou"
-  "coucou"
+  erb :index
 end
