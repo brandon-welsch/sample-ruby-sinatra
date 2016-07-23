@@ -11,68 +11,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
     <style>
-      body {
-        color: #373a3c;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
-        line-height: 1.5;
-        font-weight: 300;
-      }
+      body { color: #373a3c; font-family: 'Roboto', sans-serif; font-size: 1rem; line-height: 1.5; font-weight: 300; }
       .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-          color: inherit;
-          font-family: inherit;
-          font-weight: 500;
-          line-height: 1.1;
-          margin-bottom: 1rem;
-          margin-top: 0;
-      }
-      .img-fluid {
-        max-width: 100%;
-        height: auto;
-      }
-      a {
-        color: #0275d8;
-        text-decoration: none;
-        background-color: transparent;
-      }
-      a:focus, a:hover {
-        color: #014c8c;
-        text-decoration: underline;
-        text-decoration: none;
-      }
-      a:focus {
-        outline: thin dotted;
-        outline-offset: -2px;
-      }
-      .container {
-        margin: 0 auto;
-        text-align: center;
-      }
-      .hero {
-        padding: 3rem 1.5rem;
-      }
-      footer {  }
-      .love { margin-bottom: 2rem; }
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-      }
-      h2 {
-        font-size: 1.6rem;
-        font-weight: 300;
-      }
-      small {
+        color: inherit;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.1;
+        margin-bottom: 1rem;
         margin-top: 0;
-        font-size: 1rem;
       }
+      .img-fluid { max-width: 100%; height: auto; }
+      a { color: #0275d8; text-decoration: none; background-color: transparent; }
+      a:focus, a:hover { color: #014c8c; text-decoration: underline; text-decoration: none; }
+      a:focus { outline: thin dotted; outline-offset: -2px; }
+      .container { margin: 0 auto; text-align: center; }
+      .hero { padding: 3rem 1.5rem; }
+      .love { margin-bottom: 2rem; }
+      h1 { font-size: 2.5rem; margin-bottom: 2rem; }
+      h2 { font-size: 1.6rem; font-weight: 300; }
+      small { margin-top: 0; }
       .btn {
         overflow: visible;
-
         text-transform: uppercase;
         text-decoration: none;
-
         margin: 1em 0;
-
         -moz-user-select: none;
         border-radius: 0.25rem;
         cursor: pointer;
@@ -84,41 +46,18 @@
         text-align: center;
         vertical-align: middle;
         white-space: nowrap;
-
         background-color: #0275d8;
         border-color: #0275d8;
         color: #fff;
-
         border-radius: 0.3rem;
         font-size: 1.25rem;
         line-height: 1.33333;
         padding: 0.75rem 1.25rem;
       }
-      .btn:hover {
-        background-color: #025aa5;
-        border-color: #01549b;
-        color: #fff;
-      }
-      .btn:focus {
-        background-color: #025aa5;
-        border-color: #01549b;
-        color: #fff;
-      }
-      .btn:active {
-        background-color: #025aa5;
-        background-image: none;
-        border-color: #01549b;
-        color: #fff;
-      }
-      .btn:active:focus, .btn:active:hover {
-        background-color: #014682;
-        border-color: #01315a;
-        color: #fff;
-      }
+      .btn:hover, .btn:focus, .btn:active { background-color: #025aa5; border-color: #01549b; color: #fff; background-image: none; }
+      .btn:active:focus, .btn:active:hover { background-color: #014682; border-color: #01315a; color: #fff; }
       @media (min-width:768px){
-        .container {
-          width: 800px;
-        }
+        .container { width: 800px; }
       }
     </style>
   </head>
@@ -139,7 +78,7 @@
         <br/>
         It will be up in less than 2 minutes!
       </h2>
-      <small>The code of this sample lives <a href="https://github.com/Scalingo/sample-ruby-sinatra">on GitHub</a>.</small>
+      <p>The code of this sample lives <a href="/">on GitHub</a>. You can find <a href="http://samples.scalingo.com">more samples here</a>.</p>
     </div>
     <footer>
       <div class="container">
