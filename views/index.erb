@@ -20,7 +20,6 @@
         margin-bottom: 1rem;
         margin-top: 0;
       }
-      .img-fluid { max-width: 100%; height: auto; }
       a { color: #0275d8; text-decoration: none; background-color: transparent; }
       a:focus, a:hover { color: #014c8c; text-decoration: underline; text-decoration: none; }
       a:focus { outline: thin dotted; outline-offset: -2px; }
@@ -56,35 +55,38 @@
       }
       .btn:hover, .btn:focus, .btn:active { background-color: #025aa5; border-color: #01549b; color: #fff; background-image: none; }
       .btn:active:focus, .btn:active:hover { background-color: #014682; border-color: #01315a; color: #fff; }
+      .scalingo-logo { max-width: 100%; height: auto; width: 330px; }
+      .heart-logo { margin: 0 20px; width:56px;position:relative; top:-18px; }
+      .tech-logo { width:56px;position:relative;top:-18px; }
       @media (min-width:768px){
         .container { width: 800px; }
+        .one-liner { display: block; }
+      }
+      @media (max-width:767px){
+        .scalingo-logo, .heart-logo, .tech-logo { display: block; position: unset; margin: 0 auto; }
+        .scalingo-logo, .heart-logo { margin-bottom: 1rem; }
       }
     </style>
   </head>
   <body>
     <div class="container hero">
       <div class="love">
-        <img style="width:330px;" class="img-fluid" alt="Scalingo" src="https://scalingo.com/logo-lightgrey.svg">
-        <img style="margin: 0 20px; width:56px;position:relative;top:-18px;" alt="love" src="https://cdn.scalingo.com/documentation/heart.png">
-        <img style="width:56px;position:relative;top:-18px;" alt="ruby" src="https://cdn.scalingo.com/homepage/assets/technologies/svg/ruby-85779959327de14f801ee56cd5615036.svg">
+        <img class="scalingo-logo" alt="Scalingo" src="https://scalingo.com/logo-lightgrey.svg">
+        <img class="heart-logo" alt="love" src="https://cdn.scalingo.com/documentation/heart.png">
+        <img class="tech-logo" alt="Ruby" src="https://cdn.scalingo.com/homepage/assets/technologies/svg/ruby-85779959327de14f801ee56cd5615036.svg">
       </div>
       <h1>Greetings from a sample Ruby app <br/> built with the Sinatra framework!</h1>
       <h2>
-        Deploying your own Ruby/Sinatra app on Scalingo
-        <br/>
-        is as easy as pie:
-        <br/>
+        <span style="display:block;"><span class="one-liner">Deploying your own Ruby/Sinatra app on Scalingo</span> is as easy as pie:</span>
         <a class="btn" href="https://my.scalingo.com/deploy?source=https://github.com/Scalingo/sample-ruby-sinatra">Just click this button!</a>
-        <br/>
-        It will be up in less than 2 minutes!
+        <span style="display:block;">It will be up in less than 2 minutes!</span>
       </h2>
       <p>The code of this sample lives <a href="/">on GitHub</a>. You can find <a href="http://samples.scalingo.com">more samples here</a>.</p>
     </div>
     <footer>
       <div class="container">
         <p>
-          <a href="https://scalingo.com">Scalingo</a> is the best Platform as a Service on the market:
-          <br/>
+          <span class="one-liner"><a href="https://scalingo.com">Scalingo</a> is the best Platform as a Service on the market:</span>
           no server to install, no dependencies to install, just push your code!
         </p>
       </div>
