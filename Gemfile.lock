@@ -1,6 +1,16 @@
+GIT
+  remote: git@github.com:Scalingo/test-private-gem.git
+  revision: 89d25aacbf4013ed2663ca3562a2b8bf9d3255e5
+  specs:
+    etcd-discovery (0.1.5)
+      etcd
+
 GEM
   remote: https://rubygems.org/
   specs:
+    etcd (0.3.0)
+      mixlib-log
+    mixlib-log (1.7.1)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -14,4 +24,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  etcd-discovery!
   sinatra
+
+RUBY VERSION
+   ruby 2.3.3p222
+
+BUNDLED WITH
+   1.13.6
